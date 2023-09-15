@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rejestr"
+        android:layout_width="414dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="735dp"
+        android:background="#008080"
+        android:text="Rejestruj konto"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="384dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="621dp"
+        android:ems="10"
+        android:hint="Podaj Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rejestr" />
+
+    <EditText
+        android:id="@+id/haslo1"
+        android:layout_width="384dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="563dp"
+        android:ems="10"
+        android:hint="Podaj Hasło"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+    <EditText
+        android:id="@+id/haslo2"
+        android:layout_width="384dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="505dp"
+        android:ems="10"
+        android:hint="Powtórz Hasło"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haslo1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="145dp"
+        android:text="zatwierdź"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haslo2" />
+
+    <TextView
+        android:id="@+id/wyswietl"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="204dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
